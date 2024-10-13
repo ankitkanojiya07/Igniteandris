@@ -1,0 +1,245 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    color: #333;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.company-name {
+    font-size: 1.5em;
+}
+
+.home-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: black;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.home-button:hover {
+    background-color: #e67e22;
+}
+
+/* Help Section Styles */
+.help-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: cadetblue;
+    background-image: radial-gradient(circle, lightgreen 1px, transparent 1px);
+    background-size: 20px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.help-text {
+    max-width: 60%;
+}
+
+.help-image {
+    max-width: 30%;
+}
+
+.circular-image {
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Company Info Styles */
+.company-info {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ddd;
+}
+
+.company-info h2 {
+    margin-top: 0;
+}
+
+.info-box {
+    display: flex;
+    padding: 10px 15px;
+    margin: 10px 0;
+    background-color: white;
+    border: 1px solid blue;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-icon {
+    margin-right: 10px;
+    font-size: 1.5em;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #f39c12;
+}
+
+/* Contact Form Section Styles */
+.contact-form-section {
+    padding: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.submit-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #f39c12;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+.submit-button:hover {
+    background-color: #e67e22;
+}
+
+/* Footer Styles */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+    color: #fff;
+    font-size: 0.9em;
+}
+
+.footer a {
+    color: green;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #e67e22;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.footer-left {
+    flex: 1;
+    text-align: left;
+}
+
+.footer-right {
+    flex: 1;
+    text-align: right;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+
+    .logo-container {
+        margin-bottom: 10px;
+    }
+
+    .company-name {
+        font-size: 1.2em;
+    }
+
+    .help-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .help-text,
+    .help-image {
+        max-width: 100%;
+    }
+
+    .help-image {
+        margin-top: 20px;
+    }
+
+    .company-info {
+        text-align: center;
+    }
+
+    .info-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-left,
+    .footer-right {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .footer-right {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.9em;
+    }
+
+    .submit-button {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+
+    .footer {
+        font-size: 0.8em;
+    }
+}
